@@ -10,7 +10,9 @@
 body {
   display: flex;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20rem;
+  background-color: rgb(231, 249, 244);
 }
 
 /* Sidebar Styles */
@@ -80,26 +82,170 @@ body {
     justify-content: space-around;
 }
 .card i{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .card h3{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 .card{
-    width: 21rem;
-    height: 10rem;
-    border: 1px solid black;
+    width: 23rem;
+    height: 12rem;
+    /* border: 1px solid black; */
     padding: 2rem;
     margin: 1rem;
     border-radius: 1rem;
+    color: white;
 }
 
 .card1{
-    background-color: rgba(0, 255, 255, 0.758);
+    background-color: rgb(9, 198, 198);
 }
 .card2{
-    background-color: rgba(0, 255, 136, 0.758);
+    background-color: rgb(28, 213, 99);
 }
 .card3{
     background-color: rgba(255, 0, 115, 0.758);
 }
+
+
+
+/* Bar Chart Section Start*/
+.secondphase{
+  display: flex;
+  
+}
+.summery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 26rem;
+    width: 50%;
+    /* border: 1px solid #3498db; */
+    border-radius: .5rem;
+    background-color: white;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+    height: 300px;
+    align-items: flex-end;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bar {
+    width: 50px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bar:hover {
+    background-color: #2980b9;
+}
+
+.bar-name,
+.bar-value {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.bar-name {
+    font-weight: bold;
+}
+
+.bar-value {
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+}
+
+.atp {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+/* Bar Chart Section End*/
+
+/*updates Section Start*/
+
+.updates{
+  width: 50%;
+  padding: 2rem;
+  background-color: #e3e6f0;
+  border-radius: .5rem;
+}
+.news p{
+  font-size: .8rem;
+}
+.news{
+  /* border: 1px solid black; */
+  height: 6rem;
+}
+.utp{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/*updates Section End
+
+
+/*Assignment Secion Start*/
+
+.assignment{
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgb(206, 231, 230);
+  border-radius: .5rem;
+}
+.inputfield{
+  width: 100%;
+  margin-top: .5rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.assignment-text{
+  font-size: 1.3rem;
+}
+#topic{
+  height: 2.2rem;
+}
+#details{
+  height: 6rem;
+}
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: .5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.custom-file-upload i{
+  font-size: 3.5rem;
+}
+.custom-file-upload:hover {
+    background-color: #2980b9;
+}
+
+/*Assignment Section End*/
