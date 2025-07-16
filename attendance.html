@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="attendance.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+</head>
+<body>
+    <!-- Sidebar Section -->
+<aside id="sidebar">
+  <div class="logo">
+    <i class="lni lni-buildings-1"></i>
+  </div>
+  <nav id="nav">
+    <ul>
+        <li><a href="index.html"><i class="lni lni-dashboard-square-1"></i><span>Dashboard</span></a></li>
+        <li><a href="#"><i class="lni lni-graduation-cap-1"></i><span>Student Details</span></a></li>
+        <li><a href="attendance.html"><i class="lni lni-calendar-days"></i><span><b>Attendance</b></span></a></li>
+        <li><a href="#"><i class="lni lni-books-2"></i><span>Academics</span></a></li>
+        <li><a href="#"><i class="lni lni-phone"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+</aside>
+
+
+<div class="main-content">
+    <div class="firstphase">
+        <label for="select-class" style="font-size: 1.3rem;">Select Class:</label>
+        <select name="class" id="select-class">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+            <option value="four">Four</option>
+            <option value="five">Five</option>
+            <option value="six">Six</option>
+            <option value="seven">Seven</option>
+        </select>
+    </div>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Student Name</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+           <!-- table body  -->
+        </tbody>
+    </table>
+
+
+    <input type="submit" name="submit" id="btn" value="Submit" onclick="sub()">
+</div>
+
+<script src="attendance.js"></script>
+</body>
+</html>
