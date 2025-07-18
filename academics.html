@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="attendance.css">
+    <link rel="stylesheet" href="academics.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
 </head>
 <body>
@@ -17,8 +17,8 @@
     <ul>
         <li><a href="index.html"><i class="lni lni-dashboard-square-1"></i><span>Dashboard</span></a></li>
         <li><a href="#"><i class="lni lni-graduation-cap-1"></i><span>Student Details</span></a></li>
-        <li><a href=""><i class="lni lni-calendar-days"></i><span><b>Attendance</b></span></a></li>
-        <li><a href="academics.html"><i class="lni lni-books-2"></i><span>Academics</span></a></li>
+        <li><a href="attendance.html"><i class="lni lni-calendar-days"></i><span>Attendance</span></a></li>
+        <li><a href="#"><i class="lni lni-books-2"></i><span><b>Academics</b></span></a></li>
         <li><a href="#"><i class="lni lni-phone"></i><span>Contact</span></a></li>
     </ul>
   </nav>
@@ -27,7 +27,7 @@
 
 <div class="main-content">
     <div class="firstphase">
-        <h2>Attendance</h2><br><br>
+        <h2 style="font-size: 1.3rem;">Academic Results</h2><br><br>
         <label for="select-class" style="font-size: 1.3rem;">Select Class:</label>
         <select name="class" id="select-class">
             <option value="one">One</option>
@@ -37,7 +37,9 @@
             <option value="five">Five</option>
             <option value="six">Six</option>
             <option value="seven">Seven</option>
-        </select>
+        </select><br><br>
+        <label for="name" style="font-size: 1.3rem;">Search Name:</label>
+        <input type="text" name="name" id="name">
     </div>
 
     <table id="student-table">
@@ -45,7 +47,8 @@
             <tr>
                 <th>Roll Number</th>
                 <th>Student Name</th>
-                <th>Select</th>
+                <th>GPA</th>
+                <th>Marks</th>
             </tr>
         </thead>
         <tbody>
@@ -57,6 +60,6 @@
     <input type="submit" name="submit" id="btn" value="Submit" onclick="sub()">
 </div>
 
-<script src="attendance.js"></script>
+<script src="academics.js"></script>
 </body>
 </html>
